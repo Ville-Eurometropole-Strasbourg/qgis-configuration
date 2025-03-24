@@ -13,7 +13,9 @@
       {
         "name": "Street View",
         "folder_name": "StreetView",
+        "url": "https://github.com/Ville-Eurometropole-Strasbourg/qgis-configuration/raw/refs/heads/main/plugins/StreetView-3.3.zip",
         "official_repository": true,
+        "location": "remote",
         "plugin_id": 488,
         "version": "3.3"
       }
