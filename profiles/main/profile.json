@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/main/docs/schemas/profile/qgis_profile.json",
+    "$schema": "http://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/main/docs/schemas/profile/qgis_profile.json",
     "name": "main",
     "folder_name": "main",
     "description": "Scénario principal de déploiement de configuration Qgis de l'Eurométropole de Strasbourg",
@@ -13,9 +13,8 @@
       {
         "name": "Street View",
         "folder_name": "StreetView",
-        "url": "https://github.com/Ville-Eurometropole-Strasbourg/qgis-configuration/raw/refs/heads/main/plugins/StreetView-3.3.zip",
+        "url": "http://wpelymm.cus.fr/elyx/GCT/plugins/StreetView-3.3.zip",
         "official_repository": true,
-        "location": "remote",
         "plugin_id": 488,
         "version": "3.3"
       }
