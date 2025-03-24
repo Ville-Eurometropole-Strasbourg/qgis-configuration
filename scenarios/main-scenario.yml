@@ -32,13 +32,6 @@ steps:
         - "%PROGRAMFILES%/QGIS"
       if_not_found: warning
 
-  - name: Download profiles from remote git repository
-    uses: qprofiles-downloader
-    with:
-      source: C:/qgis-configuration
-      protocol: git_remote
-      branch: main
-
   - name: Set splash screen
     uses: splash-screen-manager
     with:
