@@ -29,7 +29,7 @@ steps:
         - "3.32"
         - "3.28"
       search_paths:
-        - "%PROGRAMFILES%/QGIS"
+        - "%PROGRAMFILES%"
       if_not_found: warning
 
   - name: Set splash screen
