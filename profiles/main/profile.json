@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/main/docs/schemas/profile/qgis_profile.json",
+    "name": "main",
+    "folder_name": "main",
+    "description": "Scénario principal de déploiement de configuration Qgis de l'Eurométropole de Strasbourg",
+    "author": "Clément Zitounui",
+    "email": "clement.zitouni@strasbourg.eu",
+    "icon": "images/icon_shortcut_qdt_demo.ico",
+    "qgisMinimumVersion": "3.28.0",
+    "qgisMaximumVersion": "3.99.10",
+    "version": "1.0.0",
+    "plugins": [
+      {
+        "name": "Profile Manager",
+        "folder_name": "profile-manager",
+        "official_repository": true,
+        "plugin_id": 2515,
+        "version": "0.31"
+      }
+    ]
+  }

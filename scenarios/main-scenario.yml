@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/refs/heads/main/docs/schemas/scenario/qdt_scenario.json
+
+metadata:
+  title: "Scénario principal de déploiement de configuration Qgis de l'Eurométropole de Strasbourg"
+  id: qdt-demo-scenario
+  description: >-
+    Scénario principal de déploiement de configuration Qgis de l'Eurométropole de Strasbourg capabilities.
+
+# Toolbelt settings
+settings:
+  # LOCAL_WORK_DIR: ~/.cache/qgis-deployment-toolbelt/demo/
+  # QGIS_EXE_PATH:
+  #   linux: /usr/bin/qgis
+  #   mac: /usr/bin/qgis
+  #   windows: "%PROGRAMFILES%/QGIS/3_28/bin/qgis-ltr-bin.exe"
+  SCENARIO_VALIDATION: true
+
+# Deployment workflow, step by step
+steps:
+  - name: Find installed QGIS
+    uses: qgis-installation-finder
+    with:
+      version_priority:
+        - "3.40"
+        - "3.34"
+        - "3.28"
+        - "3.38"
+        - "3.36"
+        - "3.32"
+        - "3.28"
+      search_paths:
+        - "%PROGRAMFILES%/QGIS"
+      if_not_found: warning
+
+  - name: Download profiles from remote git repository
+    uses: qprofiles-downloader
+    with:
+      source: https://github.com/qgis-deployment/qgis-deployment-toolbelt-cli.git
+      protocol: git_remote
+      branch: main
+
+  - name: Set splash screen
+    uses: splash-screen-manager
+    with:
+      action: create_or_restore
+      strict: false
