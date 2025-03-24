@@ -32,6 +32,29 @@ steps:
         - "%PROGRAMFILES%"
       if_not_found: warning
 
+  - name: Download profiles from local Git repository
+    uses: qprofiles-downloader
+    with:
+      source: https://github.com/Ville-Eurometropole-Strasbourg/qgis-configuration
+      protocol: git_remote
+      branch: main
+
+  - name: Download profiles from local Git repository
+    uses: qprofiles-synchronizer
+    with:
+      sync_mode: overwrite
+
+  - name: Download plugins
+    uses: qplugins-downloader
+    with:
+      force: false
+      threads: 5
+
+  - name: Synchronize plugins
+    uses: qplugins-synchronizer
+    with:
+      action: create_or_restore
+
   - name: Set splash screen
     uses: splash-screen-manager
     with:

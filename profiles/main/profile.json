@@ -11,11 +11,11 @@
     "version": "1.0.0",
     "plugins": [
       {
-        "name": "Profile Manager",
-        "folder_name": "profile-manager",
+        "name": "Street View",
+        "folder_name": "StreetView",
         "official_repository": true,
-        "plugin_id": 2515,
-        "version": "0.31"
+        "plugin_id": 488,
+        "version": "3.3"
       }
     ]
   }
