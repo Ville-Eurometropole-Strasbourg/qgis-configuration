@@ -2,7 +2,7 @@
 
 metadata:
   title: "Scénario principal de déploiement de configuration Qgis de l'Eurométropole de Strasbourg"
-  id: qdt-demo-scenario
+  id: main
   description: >-
     Scénario principal de déploiement de configuration Qgis de l'Eurométropole de Strasbourg capabilities.
 
@@ -35,7 +35,7 @@ steps:
   - name: Download profiles from remote git repository
     uses: qprofiles-downloader
     with:
-      source: https://github.com/qgis-deployment/qgis-deployment-toolbelt-cli.git
+      source: C:/qgis-configuration
       protocol: git_remote
       branch: main
 
