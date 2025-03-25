@@ -3,7 +3,7 @@
     "name": "main",
     "folder_name": "main",
     "description": "Scénario principal de déploiement de configuration Qgis de l'Eurométropole de Strasbourg",
-    "author": "Clément Zitounui",
+    "author": "Clément Zitouni",
     "email": "clement.zitouni@strasbourg.eu",
     "icon": "images/icon_shortcut_qdt_demo.ico",
     "qgisMinimumVersion": "3.28.0",
