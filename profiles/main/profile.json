@@ -24,6 +24,14 @@
         "url": "http://wpelymm.cus.fr/elyx/GCT/plugins/localiserparcelle.zip",
         "official_repository": false,
         "version": "3.6.1"
+      },
+      {
+        "name": "Equirectangular 360° Viewer",
+        "folder_name": "QgisGLViewer",
+        "url": "http://wpelymm.cus.fr/elyx/GCT/plugins/QgisGLViewer-1.6.zip",
+        "official_repository": true,
+        "plugin_id": 2851,
+        "version": "1.6"
       }
     ]
   }
