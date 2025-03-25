@@ -17,6 +17,13 @@
         "official_repository": true,
         "plugin_id": 488,
         "version": "3.3"
+      },
+      {
+        "name": "Localiser Parcelle Adresse (BAN)",
+        "folder_name": "localiserparcelle",
+        "url": "http://wpelymm.cus.fr/elyx/GCT/plugins/localiserparcelle.zip",
+        "official_repository": false,
+        "version": "3.6.1"
       }
     ]
   }
