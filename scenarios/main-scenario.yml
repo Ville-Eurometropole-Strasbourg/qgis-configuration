@@ -48,7 +48,7 @@ steps:
   - name: Download plugins
     uses: qplugins-downloader
     with:
-      force: false
+      force: true
       threads: 5
 
   - name: Synchronize plugins
