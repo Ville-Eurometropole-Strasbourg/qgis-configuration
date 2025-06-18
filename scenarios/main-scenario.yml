@@ -60,4 +60,3 @@ steps:
     uses: default-profile-setter
     with:
       profile: main
-      force_profile_selection_policy: true
