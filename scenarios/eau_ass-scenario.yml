@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/refs/heads/main/docs/schemas/scenario/qdt_scenario.json
+
+metadata:
+  title: "Scénario Eau/Assainissement de déploiement de configuration Qgis de l'Eurométropole de Strasbourg"
+  id: eau_ass
+  description: >-
+    Scénario Eau/Assainissement de déploiement de configuration Qgis de l'Eurométropole de Strasbourg capabilities.
+
+settings:
+
+  SCENARIO_VALIDATION: true
+
+steps:
+  - name: Find installed QGIS
+    uses: qgis-installation-finder
+    with:
+      version_priority:
+        - "3.42"
+        - "3.40"
+        - "3.38"
+        - "3.36"
+        - "3.34"
+        - "3.32"
+        - "3.28"
+      search_paths:
+        - "%PROGRAMFILES%"
+      if_not_found: warning
+
+  - name: Download profiles remote local Git repository
+    uses: qprofiles-downloader
+    with:
+      source: https://github.com/Ville-Eurometropole-Strasbourg/qgis-configuration
+      protocol: git_remote
+      branch: main
+
+  - name: Download plugins
+    uses: qplugins-downloader
+    with:
+      force: true
+      threads: 5
+
+  - name: Synchronize plugins
+    uses: qplugins-synchronizer
+    with:
+      action: create_or_restore
+
+  - name: Set splash screen
+    uses: splash-screen-manager
+    with:
+      action: create_or_restore
+      strict: false
+
+  - name: Set default profile to main
+    uses: default-profile-setter
+    with:
+      profile: eau_ass
