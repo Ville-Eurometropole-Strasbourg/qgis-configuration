@@ -15,6 +15,7 @@ steps:
     uses: qgis-installation-finder
     with:
       version_priority:
+        - "3.44"
         - "3.42"
         - "3.40"
         - "3.38"
@@ -55,7 +56,17 @@ steps:
       action: create_or_restore
       strict: false
 
-  - name: Set default profile to eau_ass
+  - name: Set environment variables
+    uses: manage-env-vars
+    with:
+      - name: PGSERVICEFILE
+        action: "add"
+        scope: "user"
+        value: "S:\\Commun\\RESSOURCE\\KEEPASS\\pg_service.conf"
+        value_type: path
+
+  - name: Set default profile to gct
     uses: default-profile-setter
     with:
-      profile: eau_ass
+      profile: gct
+      force_profile_selection_policy: 2

@@ -15,6 +15,7 @@ steps:
     uses: qgis-installation-finder
     with:
       version_priority:
+        - "3.44"
         - "3.42"
         - "3.40"
         - "3.38"

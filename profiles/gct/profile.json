@@ -1,0 +1,44 @@
+{
+    "$schema": "http://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/main/docs/schemas/profile/qgis_profile.json",
+    "name": "gct",
+    "folder_name": "gct",
+    "description": "Scénario GCT de déploiement de configuration Qgis de l'Eurométropole de Strasbourg",
+    "author": "Clément Zitouni",
+    "email": "clement.zitouni@strasbourg.eu",
+    "icon": "images/icon_shortcut_qdt_demo.ico",
+    "qgisMinimumVersion": "3.28.0",
+    "qgisMaximumVersion": "3.99.10",
+    "version": "1.0.0",
+    "plugins": [
+      {
+        "name": "Street View",
+        "folder_name": "StreetView",
+        "url": "http://wpelymm.cus.fr/elyx/GCT/plugins/StreetView-3.3.zip",
+        "official_repository": true,
+        "plugin_id": 488,
+        "version": "3.3"
+      },
+      {
+        "name": "Localiser Parcelle Adresse (BAN)",
+        "folder_name": "localiserparcelle",
+        "url": "http://wpelymm.cus.fr/elyx/GCT/plugins/localiserparcelle.zip",
+        "official_repository": false,
+        "version": "3.6.1"
+      },
+      {
+        "name": "Catalogue Eurométropole de Strasbourg",
+        "folder_name": "catalogems",
+        "url": "http://wpelymm.cus.fr/elyx/GCT/plugins/catalogems.zip",
+        "official_repository": false,
+        "version": "0.3"
+      },
+      {
+        "name": "Equirectangular 360° Viewer",
+        "folder_name": "QgisGLViewer",
+        "url": "http://wpelymm.cus.fr/elyx/GCT/plugins/QgisGLViewer-1.6.zip",
+        "official_repository": true,
+        "plugin_id": 2851,
+        "version": "1.6"
+      }
+    ]
+  }
