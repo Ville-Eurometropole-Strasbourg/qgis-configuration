@@ -59,3 +59,4 @@ steps:
     uses: default-profile-setter
     with:
       profile: eau_ass
+      force_profile_selection_policy: 2
