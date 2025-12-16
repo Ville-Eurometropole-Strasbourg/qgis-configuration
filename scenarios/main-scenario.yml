@@ -7,20 +7,10 @@ metadata:
     Scénario principal de déploiement de configuration Qgis de l'Eurométropole de Strasbourg capabilities.
 
 settings:
-
+  QGIS_EXE_PATH: "%PROGRAMFILES%/QGIS/QGIS 3.28.4/bin/qgis-ltr-bin.exe"
   SCENARIO_VALIDATION: true
 
 steps:
-  - name: Find installed QGIS
-    uses: qgis-installation-finder
-    with:
-      version_priority:
-        - "3.44"
-        - "3.28"
-      search_paths:
-        - "%PROGRAMFILES%"
-      if_not_found: warning
-
   - name: Download profiles remote local Git repository
     uses: qprofiles-downloader
     with:
@@ -36,7 +26,7 @@ steps:
   - name: Download plugins
     uses: qplugins-downloader
     with:
-      force: true
+      force: false
       threads: 5
 
   - name: Synchronize plugins
