@@ -16,12 +16,6 @@ steps:
     with:
       version_priority:
         - "3.44"
-        - "3.42"
-        - "3.40"
-        - "3.38"
-        - "3.36"
-        - "3.34"
-        - "3.32"
         - "3.28"
       search_paths:
         - "%PROGRAMFILES%"
@@ -37,7 +31,7 @@ steps:
   - name: Synchronize downloaded profiles with installed ones
     uses: qprofiles-synchronizer
     with:
-      sync_mode: only_new_version
+      sync_mode: overwrite
 
   - name: Download plugins
     uses: qplugins-downloader

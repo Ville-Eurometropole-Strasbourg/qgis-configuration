@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/refs/heads/main/docs/schemas/scenario/qdt_scenario.json
 
 metadata:
-  title: "Scénario Eau/Assainissement de déploiement de configuration Qgis de l'Eurométropole de Strasbourg"
-  id: eau_ass
+  title: "Scénario GCT de déploiement de configuration Qgis de l'Eurométropole de Strasbourg"
+  id: gct
   description: >-
-    Scénario Eau/Assainissement de déploiement de configuration Qgis de l'Eurométropole de Strasbourg capabilities.
+    Scénario GCT de déploiement de configuration Qgis de l'Eurométropole de Strasbourg capabilities.
 
 settings:
 
@@ -37,7 +37,7 @@ steps:
   - name: Synchronize downloaded profiles with installed ones
     uses: qprofiles-synchronizer
     with:
-      sync_mode: overwrite
+      sync_mode: only_new_version
 
   - name: Download plugins
     uses: qplugins-downloader
