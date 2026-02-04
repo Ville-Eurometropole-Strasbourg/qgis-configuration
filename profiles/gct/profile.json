@@ -17,7 +17,7 @@
           "all": [
             {
               "path": "$.user.groups_domain",
-              "operator": "contains",
+              "operator": "in",
               "value": "GS_SIG"
             }
           ]
