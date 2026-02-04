@@ -16,7 +16,7 @@
         "conditions": {
           "all": [
             {
-              "path": "$.groups_domain",
+              "path": "$.user.groups_domain",
               "operator": "in",
               "value": "GS_SIG"
             }
