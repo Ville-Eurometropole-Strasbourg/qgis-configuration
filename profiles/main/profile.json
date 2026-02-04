@@ -35,10 +35,10 @@
       {
         "name": "Equirectangular 360° Viewer",
         "folder_name": "QgisGLViewer",
-        "url": "http://wpelymm.cus.fr/elyx/GCT/plugins/QgisGLViewer-1.6.zip",
+        "url": "http://wpelymm.cus.fr/elyx/GCT/plugins/QgisGLViewer-1.6.1.zip",
         "official_repository": true,
         "plugin_id": 2851,
-        "version": "1.6"
+        "version": "1.6.1"
       }
     ]
   }
