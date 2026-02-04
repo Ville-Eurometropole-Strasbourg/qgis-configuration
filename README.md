@@ -18,6 +18,10 @@ Profil principal déployé pour les utilisateurs classique de Qgis dans les serv
 
 Profil destiné au service GCt, comprend davanatge d'élements de configuration, une itnerface plus avancé, ainsi que l'ajout de liens vers un fichier de configuration de Postgres en mode service pour la gestion de Qgis Web.
 
+Appartenance au groupe GS_SIG comme condition
+
 ### Eau et Assainissement
 
 Profil destiné au service Eau et Assainissement, il permet d'inclure les plugins métiers utile au service ainsi que un lancement par défaut sur le projet maitre "TopEau". 
+
+Appartenance au groupe GS_ASS comme condition
