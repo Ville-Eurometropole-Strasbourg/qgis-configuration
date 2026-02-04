@@ -11,7 +11,7 @@
     "version": "1.0.0",
     "rules": [
       {
-        "name": "AD Group",
+        "name": "Groupe AD GS_SIG",
         "description": "Profil uniquement pour les utilisateurs GCT",
         "conditions": {
           "all": [
