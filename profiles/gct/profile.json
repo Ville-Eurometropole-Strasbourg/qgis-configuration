@@ -1,6 +1,6 @@
 {
     "$schema": "http://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/main/docs/schemas/profile/qgis_profile.json",
-    "name": "Géomatique",
+    "name": "gct",
     "folder_name": "gct",
     "description": "Scénario GCT de déploiement de configuration Qgis de l'Eurométropole de Strasbourg",
     "author": "Clément Zitouni",

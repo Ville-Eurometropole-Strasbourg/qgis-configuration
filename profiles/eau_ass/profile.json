@@ -1,6 +1,6 @@
 {
   "$schema": "http://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/main/docs/schemas/profile/qgis_profile.json",
-  "name": "Eau et Assainissement",
+  "name": "eau_ass",
   "folder_name": "eau_ass",
   "description": "Scénario Eau/Assainissement de déploiement de configuration Qgis de l'Eurométropole de Strasbourg",
   "author": "Clément Zitouni",
