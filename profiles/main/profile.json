@@ -1,6 +1,6 @@
 {
   "$schema": "http://raw.githubusercontent.com/qgis-deployment/qgis-deployment-toolbelt-cli/main/docs/schemas/profile/qgis_profile.json",
-  "name": "Profil par défaut",
+  "name": "main",
   "folder_name": "main",
   "description": "Scénario principal de déploiement de configuration Qgis de l'Eurométropole de Strasbourg",
   "author": "Clément Zitouni",
