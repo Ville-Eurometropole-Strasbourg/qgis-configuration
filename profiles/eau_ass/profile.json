@@ -14,7 +14,7 @@
         "name": "Groupe AD GS_ASS",
         "description": "Profil uniquement pour les utilisateurs Eau/Assainissement",
         "conditions": {
-          "any": [
+          "all": [
             {
               "path": "$.user.groups_domain",
               "operator": "contains",
