@@ -39,15 +39,6 @@ steps:
       action: create_or_restore
       strict: false
 
-  - name: Set environment variables
-    uses: manage-env-vars
-    with:
-      - name: PGSERVICEFILE
-        action: "add"
-        scope: "user"
-        value: "S:\\Commun\\RESSOURCE\\KEEPASS\\pg_service.conf"
-        value_type: path
-
   - name: Set default profile to main
     uses: default-profile-setter
     with:
